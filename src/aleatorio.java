@@ -11,6 +11,8 @@ public class aleatorio {
         rondas = ale.nextInt((max - min +1))+min;
         System.out.println("el numero de rondas es " + rondas);
 
+        System.out.println("-----------------------------------------------------------------");
+
         for(int i=1;i<=rondas;i++){
             int dado1;
             int dado2;
@@ -20,12 +22,9 @@ public class aleatorio {
             suma2 +=dado2 ;
             System.out.println("ronda "+i+" : dado1= "+dado1+" dado2 "+dado2);
 
-        }
-        System.out.println();
-        System.out.println("tu suma del dado 1 es " +suma1);
-        System.out.println("tu suma del dado dos es "+ suma2);
-        System.out.println();
 
+        }
+        System.out.println("-----------------------------------------------------------------");
         if (suma1>suma2){
             System.out.println("la suma del dado uno "+suma1 + " es mayor que la suma del dado dos "+suma2);
         }
