@@ -30,6 +30,7 @@ public class advinar_numero {
         else {
                 System.out.println("----------------------------------------");
                 System.out.println("PERDISTE");
+                System.out.println("el numero era: "+numero);
                }
 
 
