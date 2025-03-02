@@ -1,5 +1,7 @@
 import  java.util.Random;
 import  java.util.Scanner;
+import javax.swing.*;
+import java.awt.*;
 public class juego_casino {
     public static void main(String[] args) {
         Random ale = new Random();
@@ -17,6 +19,7 @@ public class juego_casino {
                 System.out.println("-----------------------------------------------------");
                 System.out.println("||escriba 1 si desea continuar||escriba 2 si desea retirars ||");
                 dinero=premio;
+
                 int desicion=scanner.nextInt();
                     if(desicion==2) {
                         sigue = 2;
@@ -29,15 +32,17 @@ public class juego_casino {
                 System.out.println("||escriba 1 si desea continuar||escriba 2 si desea retirars ||");
                 int desicion=scanner.nextInt();
                 if(desicion==2) {
-                    sigue = 2;
+                    break;
                 }
             } else if (numero == 3) {
+                dinero=0;
                 System.out.println("perdiste");
                 sigue=2;
             }
 
         }
         System.out.println("-----------------------------------------------------");
+        System.out.println("su dinero es = " +dinero);
         System.out.println("se acabo el juego");
     }
 }
